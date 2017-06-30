@@ -8,7 +8,7 @@ username = os.getenv("CONAN_USERNAME", "hi3c")
 
 class SdlTestConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
-    requires = "SDL/2.0.5@%s/%s" % (username, channel)
+    requires = "SDL2/2.0.5@%s/%s" % (username, channel)
     generators = "cmake"
 
     def build(self):
